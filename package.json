@@ -1,0 +1,20 @@
+{
+  "name": "smartclass-platform",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "FastRobox 1.0 SmartClass platform - Level 2 ingest API",
+  "scripts": {
+    "start": "node src/index.js",
+    "db:init": "node tools/db-init.js",
+    "device:add": "node tools/add-device.js",
+    "tail": "node tools/tail.js",
+    "replay": "node tools/replay.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
